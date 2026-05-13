@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: sf-zd-backend-d3v-astonous-28503
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: SF_CLIENT_ID
+        sync: false
+      - key: SF_CLIENT_SECRET
+        sync: false
+      - key: SF_USERNAME
+        sync: false
+      - key: SF_PASSWORD
+        sync: false
+      - key: SF_SECURITY_TOKEN
+        sync: false
